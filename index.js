@@ -34,7 +34,7 @@ app.get('/checkDomain', (req, res) => {
             available: false,
         };
 
-        if (data.indexOf('No match found') !== -1 || data.indexOf('No match') !== -1) {
+        if (data.indexOf('No match found') !== -1 || data.indexOf('No match for domain') !== -1) {
             domainInfo.available = true;
         }
 
